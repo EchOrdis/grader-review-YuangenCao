@@ -14,3 +14,10 @@ echo 'Finished cloning'
 
 # Then, add here code to compile and run, and do any post-processing of the
 # tests
+set -e
+if [[ -f student-submission/Listexamples.java ]]
+then 
+    echo 'File existed'
+else
+    echo 'Error'
+fi
